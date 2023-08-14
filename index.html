@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Simple Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function calculator() {
-            while (true) {
-                let choice = prompt(
-                "Calculator Menu:\n" +
-                "1. Pertambahan\n" +
-                "2. Pengurangan\n" +
-                "3. Perkalian\n" +
-                "4. Pembagian\n" +
-                "5. Pangkat(^)2\n" +
-                "6. Akar Pangkat(^)2\n" +
-                "7. Exit\n" +
-                "Please choose an operation (1-7):"
-            );
-            }
+      function calculator() {
+        while (true) {
+          let choice = prompt(
+            "Calculator Menu:\n" +
+              "1. Pertambahan\n" +
+              "2. Pengurangan\n" +
+              "3. Perkalian\n" +
+              "4. Pembagian\n" +
+              "5. Pangkat(^)2\n" +
+              "6. Akar Pangkat(^)2\n" +
+              "7. Exit\n" +
+              "Please choose an operation (1-7):"
+          );
+          if (choice === null || choice === "" || isNaN(choice)) {
+            alert("Invalid choice. Please enter a valid number.");
+            continue;
+          }
+
+          choice = Number(choice);
+
+          if (choice === 7) {
+            alert("Goodbye!");
+            break;
+          }
+
+          if (choice < 1 || choice > 6) {
+            alert("Invalid choice. Please choose a valid operation (1-6).");
+            continue;
+          }
+
+          let number = parseFloat(prompt("Enter a number:"));
+
+          if (isNaN(number)) {
+            alert("Invalid input. Please enter a valid number.");
+            continue;
+          }
+
+          let result;
         }
-calculator();
-</script>
-</body>
+      }
+      calculator();
+    </script>
+  </body>
 </html>
