@@ -5,6 +5,9 @@
   </head>
   <body>
     <script>
+      function add(a, b) {
+        return a + b;
+      }
       function calculator() {
         while (true) {
           let choice = prompt(
@@ -43,6 +46,12 @@
           }
 
           let result;
+
+          switch (choice) {
+            case 1:
+              result = add(number, parseFloat(prompt("Enter another number:")));
+              break;
+          }
         }
       }
       calculator();
