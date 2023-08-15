@@ -20,11 +20,12 @@
       function squareRoot(a){
         return Math.sqrt(a);
       }
+      
       function calculator() {
         while (true) {
           let choice = prompt(
             "Calculator Menu:\n" +
-              "1. Penambahan\n" +
+              "1. Pertambahan\n" +
               "2. Pengurangan\n" +
               "3. Perkalian\n" +
               "4. Pembagian\n" +
@@ -33,6 +34,7 @@
               "7. Exit\n" +
               "Please choose an operation (1-7):"
           );
+          
           if (choice === null || choice === "" || isNaN(choice)) {
             alert("Invalid choice. Please enter a valid number.");
             continue;
@@ -56,7 +58,6 @@
             alert("Invalid input. Please enter a valid number.");
             continue;
           }
-
           let result;
 
           switch (choice) {
@@ -76,13 +77,20 @@
               );
               break;
             case 5:
+              result = square(number);
+              break;
             case 6:
+              if (number < 0) {
+                alert("Invalid input. Cannot calculate square root of a negative number.");
+                continue;
+              }
               result = squareRoot(number);
               break;
           }
-          alert(`Result : ${result}`)
+          alert(`Result: ${result}`);
         }
       }
+      
       calculator();
     </script>
   </body>
