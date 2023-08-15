@@ -17,6 +17,14 @@
         return a * b;
       }
 
+      function divide(a, b) {
+        return a / b;
+      }
+
+      function square(a) {
+        return a * a;
+      }
+
       function squareRoot(a){
         return Math.sqrt(a);
       }
@@ -75,6 +83,15 @@
                 number,
                 parseFloat(prompt("Enter another number:"))
               );
+              break;
+            case 4:
+              let divisor = parseFloat(prompt("Enter another number (non-zero:"))
+              );
+              if (divisor == 0 || isNaN(divisor)) {
+                alert("Invalid input. Division by zero or invalid number.");
+                continue
+              }
+              result = divide(number,divisor)
               break;
             case 5:
               result = square(number);
