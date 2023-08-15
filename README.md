@@ -30,7 +30,7 @@ Open the `index.html` file in your web browser to access the calculator applicat
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or create a pull request.
 
 7. License:
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License].
 
 8. Author(s):
 - GitHub: [MYusuf](https://github.com/enginoir)
