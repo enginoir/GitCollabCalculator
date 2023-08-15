@@ -23,7 +23,7 @@ Open the `index.html` file in your web browser to access the calculator applicat
 - Exit: Exit the calculator.
 
 5. Usage:
-- Enter the desired operation number (1 to 6) and follow the prompts.
+- Enter the desired operation number (1 to 6) and (7) to Exit the calculator -> follow the prompts.
 - The result of the operation will be displayed in an alert window.
 
 6. Contribution:
