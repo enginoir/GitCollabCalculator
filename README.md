@@ -32,8 +32,12 @@ Contributions are welcome! If you have any suggestions, improvements, or bug fix
 7. License:
 This project is licensed under the [MIT License](LICENSE).
 
-8. Author:
+8. Author(s):
 - GitHub: [enginoir](https://github.com/enginoir)
+- GitHub: [putuhema](https://github.com/putuhema)
+- GitHub: [aldi-balkar](https://github.com/aldi-balkar)
+- GitHub: [KhansaKenzaki/wiwidadawiyah](https://github.com/wiwidadawiyah)
+- GitHub: [hilmiwi](https://github.com/hilmiwi)
 
 9. Acknowledgments:
 The calculator application is a simple project created for educational purposes.
