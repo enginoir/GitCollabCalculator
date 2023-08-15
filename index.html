@@ -8,6 +8,9 @@
       function add(a, b) {
         return a + b;
       }
+      function squareRoot(a){
+        return Math.sqrt(a);
+      }
       function calculator() {
         while (true) {
           let choice = prompt(
@@ -51,7 +54,11 @@
             case 1:
               result = add(number, parseFloat(prompt("Enter another number:")));
               break;
+            case 5:
+              result = squareRoot(number);
+              break;
           }
+          alert(`Result : ${result}`)
         }
       }
       calculator();
